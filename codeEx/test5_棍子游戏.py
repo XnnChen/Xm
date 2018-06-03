@@ -1,3 +1,6 @@
+import random
+
+
 def main():
     """棍子游戏"""
     stick = 21
@@ -10,11 +13,18 @@ def main():
         if stick == 1:
             print("你拿到最后一根棍子，你输啦...")
             break
+        elif stick <= 0:
+            print("你赢啦...")
+            break
         if stick_taken >= 5 or stick_taken <= 0:
             print("只能拿1-4根棍子")
             continue
-        print("电脑拿：", (5 - stick_taken), "\n")
-        stick -= 5
+
+        comput_taken = random.randint(1, 4)
+        print("电脑拿：", comput_taken, "\n")
+
+
+        stick -= stick_taken + comput_taken
 
 
 if __name__ == "__main__":
