@@ -1,0 +1,6 @@
+TypeError: 'list' object cannot be interpreted as an integer -->用readline（）读取文件时，用for i in ..遍历时把i+1时会报错
+TypeError: Can't convert 'int' object to str implicitly -->字符串和数字拼接时会报错
+TypeError: 'tuple' object does not support item assignment -->对元组赋值，元祖为不可变类型
+
+ValueError: invalid literal for int() with base 10: '23.434' -->定义int类型的输入，如果输入小数时，会报ValueError
+ZeroDivisionError: division by zero -->除零错误，除数为零时发生
